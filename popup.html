@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="icons/icon128.png" alt="logo" />
+    <h1>Precise Screenshot</h1>
+    <div class="status" id="status">就绪</div>
+  </div>
+
+  <div class="field">
+    <label class="field-label">尺寸</label>
+    <select id="size-select"></select>
+  </div>
+
+  <div class="custom-area" id="custom-area" style="display:none">
+    <div class="field">
+      <label class="field-label">名称</label>
+      <input id="name-input" type="text" placeholder="例如：移动端" />
+    </div>
+    <div class="custom-row">
+      <input id="width-input" type="number" placeholder="宽" />
+      <span class="x">×</span>
+      <input id="height-input" type="number" placeholder="高" />
+    </div>
+    <div class="custom-btns">
+      <button id="save-btn" class="btn btn-secondary">保存尺寸</button>
+      <button id="delete-btn" class="btn btn-danger" style="display:none">删除</button>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button id="resize" class="btn btn-primary">调整窗口尺寸</button>
+    <button id="capture" class="btn btn-primary">截图</button>
+  </div>
+
+  <div class="footer">
+    <label class="switch">
+      <input type="checkbox" id="compensate" checked />
+      <span>视口偏移补偿（精确视口）</span>
+    </label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

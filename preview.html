@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>截图预览</title>
+  <link rel="stylesheet" href="preview.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <span class="title">截图预览</span>
+    <div class="actions">
+      <button id="copy">复制</button>
+      <button id="download" class="primary">下载</button>
+    </div>
+  </div>
+
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="editor"></canvas>
+  </div>
+
+  <div class="statusbar">
+    <span id="size-info">-</span>
+    <span id="file-info">-</span>
+  </div>
+
+  <script src="preview.js"></script>
+</body>
+</html>
